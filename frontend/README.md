@@ -28,8 +28,7 @@ I execute 9 tests:
 * The innertext of the button.
 
 
-
-![exec]([https://raw.githubusercontent.com/ShathaCodes/SoftwareTestingLab/main/results.PNG](https://github.com/maissa-gallah/Software-Testing-Project/blob/main/test%20unitaire.PNG)
+![execution]([https://raw.githubusercontent.com/ShathaCodes/SoftwareTestingLab/main/results.PNG](https://github.com/maissa-gallah/Software-Testing-Project/blob/main/test%20unitaire.PNG)
 
 
 
