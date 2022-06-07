@@ -27,6 +27,7 @@ Also I used the providers in the TestBed.configureTestingModule to mock the meth
 
 You can run the test manually with :
 ```
+cd frontend
 ng test
 ```
 
@@ -37,6 +38,11 @@ Here we test the integration of different parts of backend.
 
 I will be using a seperate database for testing so that it won't affect the actual Database. 
 
+You can run the test manually with :
+```
+cd Back
+mvn test
+```
 
 ### Step 3 : System Tests
 
