@@ -1,0 +1,70 @@
+
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-size: 100% 100%
+}
+
+.card-main {
+    float: none; 
+    margin-bottom: 10px; 
+    padding: 1% 2%;
+    margin-top: 2%;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+}
+.card {
+    padding: 1% 2%;
+    margin-top: 2%;
+    margin-bottom: 60%;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+.form-control-label {
+    margin-bottom: 0
+}
+
+input,
+textarea,
+button {
+    padding: 0.2% 0.5%;
+    border-radius: 5px !important;
+    margin: 0.5% 0%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 120% !important;
+    font-weight: 200
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 200
+}
+
+.btn-block {
+    text-transform: uppercase;
+    font-size: 80% !important;
+    font-weight: 200;
+    height: 100%;
+    cursor: pointer;
+    padding-left: auto;
+}
+
+.btn-block:hover {
+    color: #00BCD4 !important
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}

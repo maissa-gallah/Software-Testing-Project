@@ -1,0 +1,45 @@
+<div class="container-fluid px-1 py-5 mx-auto back">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+
+            <div class="card-main">
+                <h5 class="text-center mb-4" data-test-id="title-form" >Register in EVAX</h5>
+                <form class="form-card " [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                         <label class="form-control-label px-3">First name</label> <input formControlName="firstName"  type="text" id="fname"  name="fname" placeholder="Enter your first name"> </div>
+                        
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name</label> <input formControlName="lastName" type="text" id="lname" name="lname" placeholder="Enter your last name" > </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">your email</label> <input formControlName="email" type="text" id="email" name="email" placeholder="" > </div>
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number</label> <input formControlName="phone"  type="text" id="mob" name="mob" placeholder="" > </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                           <label class="form-control-label px-3">city</label>
+                            <input formControlName="city" type="text" id="job" name="job" placeholder="" >
+                           </div>
+                           <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Sex</label>
+                            <select id="inputState" class="form-control" formControlName="sex">
+                              <option selected>male</option>
+                              <option>female</option>
+                            </select>
+                             </div>
+                    </div>
+                    <div class="row justify-content-between text-left"> 
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3" for="birthday">Birthday</label>
+                            <input  class="form-control" formControlName="birthday" type="date" id="birthday" name="birthday">
+                      </div>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="form-group col-sm-6 center "> <button type="submit" [disabled]="!profileForm.valid" class="btn-block btn-primary" >submit</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
