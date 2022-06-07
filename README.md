@@ -30,6 +30,7 @@ You can run the test manually with :
 cd frontend
 ng test
 ```
+Go to frontend/readme.md to view more details. 
 
 ### Step 2 : Integration Tests
 
@@ -40,9 +41,10 @@ I will be using a seperate database for testing so that it won't affect the actu
 
 You can run the test manually with :
 ```
-cd Back
+cd backend
 mvn test
 ```
+Go to backend/readme.md to view more details. 
 
 ### Step 3 : System Tests
 
@@ -59,6 +61,7 @@ You can run the test manually with :
 cd e2e
 ng run evax-example:cypress-open
 ```
+Go to e2e/readme.md to view more details. 
 
 ### Step 4 : Acceptance Tests
 
