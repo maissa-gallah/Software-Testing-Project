@@ -13,13 +13,13 @@ cd frontend
 ng test
 
 ```
-###in the app component module 
+### in the app component module 
 I execute 3 tests:
 * the app was created succefully or not.
 * the name of the project was returned or not.
 * verify the title and the initails variables.
 
-###in the form component module 
+### in the form component module 
 I execute 9 tests:
 * The component was created succefully or not.
 * The input of the firstname was valide or not.
