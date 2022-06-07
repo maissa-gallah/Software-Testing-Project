@@ -19,7 +19,6 @@ export class AppComponent {
   constructor(private service:ServiceService) { }
 
   ngOnInit() {
-    
     this.service.numberusers().subscribe((data:any)=>{
       this.subscribed = data;
     })  
@@ -37,13 +36,6 @@ export class AppComponent {
     this.subscribed++;
     this.show=true;
     }
-    id:any;
-    id1:any;
-    showUser(value:any){
-      this.id=value;
-      this.id1=this.service.userId;
-      }
-  
     incrementVaccinated(value:string){
       this.vaccinated++;
       }

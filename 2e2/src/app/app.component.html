@@ -4,17 +4,17 @@
     <div class="container">
         <div class="row">
             <div class="col-9">
-                <h1 id="name-project" >EVAX</h1>
+                <h1>EVAX</h1>
               </div>
             <div class="col-3">
-              <div class="row"> <h5>Number of users {{subscribed}}</h5></div>
+              <div class="row"> <h5 id ="nbusers">Number of users {{subscribed}}</h5></div>
               
-              <div class="row"><h5>Number of vaccinated {{vaccinated}}</h5></div>
+              <div class="row"><h5 id ="nbvaccinated">Number of vaccinated {{vaccinated}}</h5></div>
               </div>
           </div>
         
       </div>
       
-<app-form  *ngIf=!show (newUser)="showUser($event)" (valueSubscibedChanged)="showValue($event)" ></app-form>
+<app-form  *ngIf=!show (valueSubscibedChanged)="showValue($event)" ></app-form>
 <app-profil *ngIf=show [person]=person (valueVaccinetedChanged)="incrementVaccinated($event)"></app-profil>
 </div>

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 
-import {  Observable, throwError } from 'rxjs';
+import {  throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 
 
@@ -11,7 +11,6 @@ import { retry, catchError } from 'rxjs/operators';
 export class ServiceService {
 
   private REST_API_SERVER = "http://localhost:8080/users";
-  errorMessage: any;
 
   constructor(private httpClient: HttpClient) { };
 
@@ -35,36 +34,4 @@ export class ServiceService {
   public numbervaccinated(){
     return this.httpClient.get(this.REST_API_SERVER+"/vaccinated").pipe(catchError(this.handleError));
   }
-  userId:any;
-  
-  
-   public adduser(user: any):Observable<any>{
-    this.httpClient.post<any>('http://localhost:8080/users/create', user).subscribe({
-        next: data => {
-            this.userId = data.id;
-        },
-        error: error => {
-            this.errorMessage = error.message;
-            console.error('There was an error!', error);
-        }
-    }    
-    );
-    return(this.userId);
-    
-    ;
-  }
- 
-   userIdUpdate:any;
-  public upadteuser(id: number){ 
-        this.httpClient.put<any>(`${this.REST_API_SERVER}/update/${id}`,{})
-            .subscribe(data => this.userIdUpdate = data.id)
-            ;
-          }
-
-
-
-  
-
 }
-
-
