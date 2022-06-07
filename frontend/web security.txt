@@ -1,0 +1,2 @@
+cmd:C:"Path to chrome"/chrome.exe  --user-data-dir="C:/chrome dev session" --disable-web-security
+chrome.exe --user-data-dir="C:/Chrome dev seesion" --disable-web-security
